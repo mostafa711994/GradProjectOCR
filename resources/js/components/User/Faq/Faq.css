@@ -1,0 +1,29 @@
+body {
+    color: rgb(245, 245, 245, .8);
+}
+
+.main_container {
+    text-align: left;
+}
+
+.photo {
+    width: 100%;
+}
+
+.image_container {
+    width: 30%;
+    display: inline-block;
+}
+
+.title1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Reem Kufi';
+    font-size: 3rem;
+}
+
+li {
+    color: rgb(26, 26, 26);
+    font-family: 'Reem Kufi';
+    font-size: 1.5rem;
+}

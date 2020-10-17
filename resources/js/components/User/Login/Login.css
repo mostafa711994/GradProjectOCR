@@ -1,0 +1,67 @@
+body,
+label {
+    color: whitesmoke;
+}
+
+.limit,
+.u {
+    text-align: left;
+    color: whitesmoke;
+    font-family: 'Reem Kufi';
+    margin-bottom: 1rem;
+}
+
+.login_title {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom: .75rem;
+    text-align: center;
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: rgb(255, 255, 255, .08);
+    border-radius: 10px;
+    border: none;
+    color: rgb(138, 138, 138);
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+}
+
+.c,
+.l1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(255, 255, 255, .5);
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.photo {
+    width: 100%;
+}
+
+.image_container {
+    width: 20%;
+    min-width: 227px;
+    display: inline-block;
+    margin: auto;
+}
+
+.inner {
+    padding-top: 0 !important;
+    height: auto;
+}

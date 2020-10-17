@@ -1,0 +1,283 @@
+html * {
+    -webkit-font-smoothing: antialiased;
+}
+
+h6 {
+    font-size: 1rem !important;
+    font-weight: bolder;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a .material-icons {
+    vertical-align: middle;
+}
+/* >>>> Nav User Img */
+
+.nav-user-img-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0rem;
+    overflow: hidden;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#nav a:last-child:hover {
+    background-color: rgb(255, 255, 255, .3);
+    border: none;
+}
+
+.nav-user-img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+/* >>>> Nav User Img End*/
+/* &&&& Page Header */
+
+.profile-page .page-header {
+    height: 380px;
+    background-position: center;
+}
+
+.page-header {
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-filter:after,
+.header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.header-filter::before {
+    background: rgba(0, 0, 0, .5);
+}
+/* &&&& Page Header */
+/* #### White Container */
+
+.white_container {
+    margin: -60px 30px 0;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    background: #FFF;
+    position: relative;
+    z-index: 3;
+    min-width: 208px;
+}
+/* #### White Container */
+/* //// user image  */
+
+.profile {
+    text-align: center;
+    height: 110px;
+}
+
+.user_image {
+    max-width: 160px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    text-align: center;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, .24), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    border-radius: 50%!important;
+    border: double 4px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(80, 158, 114) 50%, rgba(255, 255, 255));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+/* //// user image  */
+/* ^^^^ User Name, job, Bio */
+
+.user_name {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 16px;
+    min-height: 32px;
+    color: #3C4858;
+    font-weight: 700;
+    font-family: 'Reem Kufi';
+    padding-top: 0;
+}
+
+.description {
+    margin: 1rem auto;
+    margin-top: 0;
+    max-width: 600px;
+    color: #999;
+    font-weight: 300;
+}
+
+p {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 1rem 50px;
+}
+/* ^^^^ User Name, job, Bio */
+/* %%%% Icons Tabs */
+
+.nav-pills,
+.nav-tabs {
+    border: 0;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+.nav .nav-item {
+    position: relative;
+    margin: 0 2px;
+}
+
+.nav-pills.nav-pills-icons .nav-item .nav-link {
+    border-radius: 10px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #31945c;
+    box-shadow: 0 5px 20px 0 rgba(49, 148, 92, .2), 0 13px 24px -11px rgb(49, 148, 92, .8);
+}
+
+.nav-pills .nav-item .nav-link {
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    color: #555;
+    transition: all .3s;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.nav-pills .nav-item .nav-link:not(.active):hover {
+    background-color: rgba(200, 200, 200, .2);
+}
+
+.nav-pills .nav-item i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+}
+/* %%%% Icons Tabs */
+/* @@@@ Tabs Content */
+
+.tab-space {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.profile-page .gallery {
+    margin-top: 3.213rem;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.profile-page .profile .name {
+    margin-top: -80px;
+}
+
+.tab-content>.active {
+    display: block;
+    text-align: center;
+}
+
+.tablink {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: .8rem;
+    color: #509e72;
+    font-family: 'Alatsi', sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    z-index: -6;
+}
+/* @@@@ Tabs Content */
+/* Total content */
+
+.content {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.main_inf_container {
+    display: inline-block;
+}
+
+.real_val_container {
+    display: inline-block;
+}
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 10px 20px;
+    height: 100%;
+    margin: auto;
+}
+/* main Information Of All Tabs */
+
+.main_information {
+    padding: 0rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.main_information li {
+    margin: 1.1rem auto;
+    list-style: none;
+    font-family: 'Righteous', cursive;
+    font-size: 1rem;
+    color: #1d7945;
+    text-align: left;
+}
+/* real Values Of All Tabs */
+
+.real_values {
+    padding: 0rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.real_values li {
+    margin: 1.1rem auto;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+/* Links in tabs */
+
+.change-pass {
+    color: #509e72;
+    text-decoration: underline;
+    text-align: center;
+}

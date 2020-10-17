@@ -1,0 +1,23 @@
+  if(!isAlpha(userData.first_name)){
+            errors.first_name.push(" First name must be a string");
+        }
+        if(!isAlpha(userData.last_name)){
+            errors.last_name.push(" Last name must be a string");
+        }
+        if(!isAlpha(userData.username)){
+            errors.username.push("The username must be a string");
+        }
+
+        if(!isEmail(userData.email)){
+            errors.email.push("The email must be a valid email address");
+        }
+
+
+        if(userData.password.length < 6){
+            errors.password.push("password must be between 6 to 50 characters");
+
+        }
+        if(userData.phone_number.length < 10){
+            errors.password.push("password must be greater than 9 numbers");
+
+        }

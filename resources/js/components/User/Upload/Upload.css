@@ -1,0 +1,149 @@
+header,
+hr,
+.scanning_buttons,
+.select_photo {
+    margin: auto;
+}
+
+.input-file-container {
+    position: relative;
+    width: 225px;
+    margin: 20px auto;
+}
+
+#my-file {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+.btn-2 {
+    background-color: #99c793;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+.btn-2:before {
+    color: #fff;
+    content: "\f382";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 100%;
+    height: 100%;
+    right: 130%;
+    line-height: 3.3;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.btn-2:hover::before {
+    background-color: darken(#99c793, 30%);
+    right: 75%;
+}
+
+
+/* .wrapper {
+            background-color: #fff;
+            border-radius: 1rem;
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 2rem;
+            width: 100%;
+        } */
+
+.input-file-trigger {
+    background: #20966e;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: bold;
+    font-size: inherit;
+    font-weight: 600;
+    margin: 20px auto;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+
+.js .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: #6cc091;
+    color: whitesmoke;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.js .input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover+.input-file-trigger,
+.js .input-file:focus+.input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    color: white;
+    background: #20966e;
+}
+
+.file-return {
+    margin: 0;
+    padding: 10px;
+}
+
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.submit {
+    background: #6cc091;
+    border: none;
+    border-radius: 30px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9rem;
+    margin: 20px auto;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+
+.select_photo h3 {
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+.line_premium_title {
+    background-image: -webkit-linear-gradient(left, #5c5c6d, #fff, #626374);
+    margin: 20px auto;
+}

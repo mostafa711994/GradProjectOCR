@@ -1,0 +1,1239 @@
+/* ---- Home Page ---- */
+
+.home_main_image_container {
+    width: 30%;
+    min-width: 185px;
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+.home_main_image {
+    width: 100%;
+}
+
+
+/* Convert Now Button Container */
+
+.home_button_container {
+    border-radius: 25px;
+    display: block;
+    height: auto;
+    min-width: 262px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+/* Convert Now Button */
+
+.home_button_container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.home_button_container ul li {
+    --c: #f3f3f3;
+    color: var(--c);
+    font-size: 1rem;
+    border: 2px solid var(--c);
+    border-radius: 30px;
+    width: 12em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+/* Balls when hovering */
+
+.home_button_container ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+
+/* Balls Animation Timing */
+
+.home_button_container ul li:hover {
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.home_button_container ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.home_button_container ul li span:nth-child(1) {
+    --n: 1;
+}
+
+.home_button_container ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.home_button_container ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.home_button_container ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+/* ---- End Home Page ---- */
+
+
+/* ---- Android Page ---- */
+
+.android_text_container {
+    background: rgba(255, 255, 255, .06);
+    border: 0px solid rgba(255, 255, 255, .06);
+    border-radius: 25px;
+    padding: 1rem;
+    display: inline-block;
+    height: auto;
+    width: 45%;
+    min-width: 262px;
+    margin: 0rem auto;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+/* Android Title */
+
+#android_title {
+    font-family: 'Alatsi', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: whitesmoke;
+    width: 90%;
+    margin: .6rem auto;
+    vertical-align: middle;
+    padding-top: 0;
+    text-align: center;
+}
+
+
+/* Android Paragraph */
+
+#android_paragraph {
+    margin: 0rem 0rem 0rem 0rem;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 auto;
+    color: #d0d0d0;
+}
+
+
+/* ---- End Android Page ---- */
+
+
+/* ---- About Page ---- */
+
+.container {
+    margin: auto;
+}
+
+#about_edit h2 {
+    color: whitesmoke;
+    font-family: 'Reem Kufi';
+}
+
+#about_edit h4 {
+    color: rgb(122, 239, 200);
+}
+
+#about_edit {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(233, 236, 239, .08);
+    border-radius: 30px;
+}
+
+
+/* ---- End About Page ---- */
+
+
+/* ---- Archive Page ---- */
+
+
+/* Archive Container */
+
+.archive_container {
+    width: 100%;
+    height: auto;
+    border: 0px solid rgba(255, 255, 255, .3);
+    border-radius: 30px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+/* Archive Table */
+
+.archive_table {
+    font-family: 'Tajawal', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+
+/* Table Border Shape */
+
+.archive_table td,
+.archive_table th {
+    border-radius: 30px;
+    padding: .3rem;
+    margin: auto;
+}
+
+
+/* Change Colors Of Odd Rows */
+
+.archive_table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(245, 245, 245);
+    font-weight: 600;
+}
+
+
+/* Change Colors Of even Rows */
+
+.archive_table tr:nth-child(even) {
+    background-color: #b3b3b3;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+}
+
+
+/* First Row Of Table (Title) */
+
+.archive_table th {
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    text-align: center;
+    background-color: #50966f;
+    margin: auto;
+}
+
+
+/* Data Of Archived Files */
+
+.archive_table td {
+    font-size: 1rem;
+    margin: auto;
+}
+
+
+/* Responsive Table */
+
+@media screen and (max-width: 600px) {
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+/* ---- End Archive Page ---- */
+
+
+/* ---- Contact Page ---- */
+
+#contact_edit .jumbotron {
+    background-color: rgb(233, 236, 239, .08);
+    padding: 2rem 1rem;
+}
+
+#contact_edit h2,
+#contact_edit h5 {
+    margin: auto;
+    color: whitesmoke;
+}
+
+#contact_edit h3 {
+    color: rgb(122, 239, 200);
+}
+
+#contact_edit label {
+    text-align: left;
+    color: whitesmoke;
+}
+
+#contact_edit p {
+    margin-bottom: 0;
+    padding: 0 50px;
+}
+
+#contact_edit i {
+    margin-top: 10px;
+}
+
+#contact_edit .card {
+    background-color: rgb(233, 236, 239, .08);
+}
+
+#contact_edit textarea {
+    background-color: rgb(233, 236, 239, .2);
+}
+
+#contact_edit .form-control {
+    color: rgb(78, 78, 78) !important;
+    background-color: rgb(233, 236, 239, .2);
+}
+
+
+/* ---- End Contact Page ---- */
+
+
+/* ---- Convert Page ---- */
+
+#convert hr,
+#convert .scanning_buttons,
+#convert .select_photo {
+    margin: auto;
+}
+
+#convert .input-file-container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#my-file {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+#convert .btn-2 {
+    background-color: #99c793;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+#convert .btn-2:before {
+    color: #fff;
+    content: "\f382";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 100%;
+    height: 100%;
+    right: 130%;
+    line-height: 3.3;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+#convert .btn-2:hover::before {
+    background-color: darken(#99c793, 30%);
+    right: 75%;
+}
+
+#convert .input-file-trigger {
+    background: #20966e;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: bold;
+    font-size: inherit;
+    font-weight: 600;
+    margin: 20px auto;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#convert .input-file-container label {
+    padding: auto 0px;
+}
+
+#convert .js .input-file-trigger {
+    display: block;
+    background: #6cc091;
+    color: whitesmoke;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+#convert .js .input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+#convert .js .input-file:hover+.input-file-trigger,
+#convert .js .input-file:focus+.input-file-trigger,
+#convert .js .input-file-trigger:hover,
+#convert .js .input-file-trigger:focus {
+    color: white;
+    background: #20966e;
+}
+
+#convert .js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+#convert .js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+}
+
+#convert .main_container .flex div p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#convert .submit {
+    background: #6cc091;
+    border: none;
+    border-radius: 30px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9rem;
+    margin: 20px auto;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+
+#convert .select_photo h3 {
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+#convert .line_premium_title {
+    background-image: -webkit-linear-gradient(left, #5c5c6d, #fff, #626374);
+    margin: 20px auto;
+}
+
+#convert p {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 36px;
+}
+
+
+/* ---- End Convert Page ---- */
+
+
+/* ---- FAQ Page ---- */
+
+#faq {
+    text-align: left;
+    color: hsl(0, 0%, 75%);
+}
+
+#faq .faq_photo {
+    width: 100%;
+}
+
+#faq .image_container {
+    width: 30%;
+    display: inline-block;
+}
+
+#faq .title1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Reem Kufi';
+    font-size: 3rem;
+    margin-bottom: 36px;
+}
+
+#faq li {
+    color: rgb(26, 26, 26);
+    font-family: 'Reem Kufi';
+    font-size: 1.5rem;
+}
+
+
+/* ---- End FAQ Page ---- */
+
+
+/* ---- Features Page ---- */
+
+#features .card-title {
+    margin-top: 15px;
+    font-family: 'Reem Kufi';
+    color: #ffffff;
+}
+
+#features .card {
+    background-color: rgb(255, 255, 255, .08);
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#features .fa-magic:before,
+#features .fa-file-signature:before,
+#features .fa-sync:before,
+#features .fa-camera-retro:before,
+#features .fa-blog:before,
+#features .fa-shield-alt:before {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#features .card-text {
+    padding: 0px 50px;
+    color: rgb(199, 199, 199) !important;
+}
+
+
+/* ---- End Features Page ---- */
+
+
+/* ---- Forgot Pass Page ---- */
+
+#forgetpass .forget_title {
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    text-align: center;
+    color: whitesmoke;
+    margin: 1.5rem auto;
+}
+
+#forgetpass input[type="text"],
+#forgetpass input[type="password"],
+#forgetpass select,
+#forgetpass textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: #d4d4d4;
+    border-radius: 10px;
+    border: none;
+    color: rgb(138, 138, 138);
+    display: inline-block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    margin: 1em auto;
+}
+
+#forgetpass ::-webkit-input-placeholder {
+    font-family: 'Reem Kufi';
+    color: #818181 !important;
+    opacity: 1.0;
+}
+
+#forgetpass .forget_photo {
+    width: 100%;
+}
+
+#forgetpass .image_container {
+    width: 30%;
+    min-width: 227px;
+    display: inline-block;
+    margin: 1.5em auto;
+}
+
+#forgetpass .inner {
+    padding-top: 0 !important;
+    height: auto;
+}
+
+
+/* ---- End Forgot Pass Page ---- */
+
+
+/* ---- Login Page ---- */
+
+#login label {
+    color: whitesmoke;
+}
+
+#login .limit,
+#login .u {
+    text-align: left;
+    color: whitesmoke;
+    font-family: 'Reem Kufi';
+    margin-bottom: 1rem;
+}
+
+#login .login_title {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom: .75rem;
+    text-align: center;
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+#login input[type="password"],
+#login input[type="text"],
+#login input[type="email"],
+#login select,
+#login textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: rgb(255, 255, 255, .08);
+    border-radius: 10px;
+    border: none;
+    color: rgb(138, 138, 138);
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+}
+
+#login .c,
+#login .l1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(255, 255, 255, .5);
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+#login .photo {
+    width: 100%;
+}
+
+#login .image_container {
+    width: 20%;
+    min-width: 227px;
+    display: inline-block;
+    margin: auto;
+}
+
+#login .inner {
+    padding-top: 0 !important;
+    height: auto;
+}
+
+
+/* ---- End Login Page ---- */
+
+
+/* ---- Output Page ---- */
+
+#output .left_format_container,
+#output .right_convert_container {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 50px;
+}
+
+#output .line_premium_title {
+    background-image: -webkit-linear-gradient(left, #5c5c6d, #fff, #626374);
+    margin: 20px auto;
+}
+
+#output .output h3 {
+    margin: 20px auto;
+    padding: 0;
+}
+
+#output .btn {
+    margin: 0;
+}
+
+
+/* ---- End Output Page ---- */
+
+
+/* ---- Payment Page ---- */
+
+#payment {
+    background-image: url('../images/payment.jpg');
+}
+
+#payment:before {
+    background: rgba(75, 75, 93, 0.3);
+}
+
+#payment .card {
+    background-color: rgb(233, 236, 239, .08);
+    border-radius: 30px;
+}
+
+#payment p {
+    font-family: 'Reem Kufi';
+    padding: 0;
+    font-size: 2rem;
+    margin-bottom: 48px;
+}
+
+#pay_title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#payment input[type="text"],
+#payment select,
+#payment textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: #d4d4d4;
+    border-radius: 10px;
+    border: none;
+    color: rgb(138, 138, 138);
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 50%;
+    margin: 0;
+    text-align: left;
+}
+
+#payment ::-webkit-input-placeholder {
+    font-family: 'Reem Kufi';
+    opacity: 1.0;
+}
+
+#payment .col-sm-8 {
+    text-align: left;
+    display: inline-block;
+}
+
+#payment label {
+    text-align: left;
+}
+
+#payment .btn {
+    color: #495057 !important;
+    background-color: #e9ecef;
+    box-shadow: inset 0 0 0 3px #e9ecef;
+}
+
+#payment .form-control {
+    background-color: #d4d4d4;
+}
+
+#payment i {
+    font-size: 1em;
+}
+
+
+/* ---- End Payment Page ---- */
+
+
+/* ---- Pro Page ---- */
+
+#pro {
+    padding: 8em 0 4.5em 0;
+}
+
+#pro article {
+    display: inline-block;
+    background: #d3d3d31f;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0px 10px 6px #0000001c;
+}
+
+#pro h {
+    font-size: 3em;
+    font-family: 'Reem Kufi';
+    color: #cae2d5;
+    margin-bottom: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0px -3px 0 #494848, 0px -3px 0 #494848, 0px 3px 0#494848, 0px 3px 0 #494848, -3px 0px 0 #494848, 3px 0px 0 #494848, -3px 0px 0 #494848, 3px 0px 0 #494848, -3px -3px 0 #494848, 3px -3px 0 #494848, -3px 3px 0 #494848, 3px 3px 0 #494848, -3px 9px 0 #494848, 0px 9px 0 #494848, 3px 9px 0 #494848, 0 9.5px .5px rgba(0, 0, 0, .1), 0 0 3px rgba(0, 0, 0, .1), 0 3px 0px rgba(0, 0, 0, .3), 0 6px 3px rgba(0, 0, 0, .2), 0 9px 9px rgba(0, 0, 0, .25), 0 12px 12px rgba(0, 0, 0, .2), 0 18px 18px rgba(0, 0, 0, .15);
+}
+
+#pro h2 {
+    color: #232020;
+}
+
+#pro span {
+    color: #232020;
+}
+
+#pro p {
+    color: whitesmoke;
+    margin-bottom: 0;
+    margin: 20px auto;
+}
+
+#pro h3 {
+    padding: 0;
+    margin: 50px auto;
+}
+
+#pro .innerp {
+    margin: 0;
+}
+
+
+/* ---- End PRO ---- */
+
+
+/* ---- Tutorial Page ---- */
+
+
+/* Tutorial Title */
+
+#tutorial h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin: 0rem auto;
+    color: whitesmoke;
+}
+
+
+/* Line After main Title */
+
+#tutorial .line_tutorial_title {
+    border: 0;
+    width: 60vw;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #5c5c6d, #fff, #626374);
+    margin: 20px auto;
+}
+
+
+/* List Of Steps */
+
+#tutorial ul {
+    width: 50%;
+    margin: 1.3rem auto;
+    padding: 0rem;
+}
+
+#tutorial li {
+    font-size: 1.1rem;
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+    margin: 10px auto;
+}
+
+
+/* video Title */
+
+#tutorial .video_title {
+    font-size: 1.8rem;
+}
+
+
+/* Line After Video Title */
+
+#tutorial .line_video_title {
+    width: 40vw;
+}
+
+
+/* Scanning Video Limitations */
+
+#tutorial .scanning_video {
+    width: 25rem;
+    height: 20rem;
+    max-width: 100%;
+    margin: 1.3rem auto;
+}
+
+
+/* ---- End Tutorial Page ---- */
+
+
+/* ---- Profile Page ---- */
+
+#profile h6 {
+    font-size: 1rem !important;
+    font-weight: bolder;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#profile a .material-icons {
+    vertical-align: middle;
+}
+
+
+/* >>>> Nav User Img */
+
+.nav-user-img-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0rem;
+    overflow: hidden;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#profile #nav a:last-child:hover {
+    background-color: rgb(255, 255, 255, .3);
+    border: none;
+}
+
+.nav-user-img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* >>>> Nav User Img End*/
+
+
+/* &&&& Page Header */
+
+#profile .profile-page .page-header {
+    height: 380px;
+    background-position: center;
+}
+
+#profile .page-header {
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+#profile .header-filter:after,
+#profile .header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+#profile .header-filter::before {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/* &&&& Page Header */
+
+
+/* #### White Container */
+
+#profile .white_container {
+    margin: -60px 30px 0;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    background: #FFF;
+    position: relative;
+    z-index: 3;
+    min-width: 208px;
+}
+
+
+/* #### White Container */
+
+
+/* //// user image  */
+
+#profile .profile {
+    text-align: center;
+    height: 110px;
+}
+
+#profile .user_image {
+    max-width: 160px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    text-align: center;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, .24), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    border-radius: 50%!important;
+    border: double 4px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(80, 158, 114) 50%, rgba(255, 255, 255));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+/* //// user image  */
+
+
+/* ^^^^ User Name, job, Bio */
+
+#profile .user_name {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 16px;
+    min-height: 32px;
+    color: #3C4858;
+    font-weight: 700;
+    font-family: 'Reem Kufi';
+    padding-top: 0;
+}
+
+#profile .description {
+    margin: 1rem auto;
+    margin-top: 0;
+    max-width: 600px;
+    color: #999;
+    font-weight: 300;
+}
+
+#profile .white_container p {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 1rem 50px;
+}
+
+
+/* ^^^^ User Name, job, Bio */
+
+
+/* %%%% Icons Tabs */
+
+#profile .nav-pills,
+#profile .nav-tabs {
+    border: 0;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+#profile .nav .nav-item {
+    position: relative;
+    margin: 0 2px;
+}
+
+#profile .nav-pills.nav-pills-icons .nav-item .nav-link {
+    border-radius: 10px;
+}
+
+#profile .nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #31945c;
+    box-shadow: 0 5px 20px 0 rgba(49, 148, 92, .2), 0 13px 24px -11px rgb(49, 148, 92, .8);
+}
+
+#profile .nav-pills .nav-item .nav-link {
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    color: #555;
+    transition: all .3s;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#profile .nav-pills .nav-item .nav-link:not(.active):hover {
+    background-color: rgba(200, 200, 200, .2);
+}
+
+#profile .nav-pills .nav-item i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+
+/* %%%% Icons Tabs */
+
+
+/* @@@@ Tabs Content */
+
+#profile .tab-space {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#profile .profile-page .gallery {
+    margin-top: 3.213rem;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#profile .profile-page .profile .name {
+    margin-top: -80px;
+}
+
+#profile .tab-content>.active {
+    display: block;
+    text-align: center;
+}
+
+#profile .tablink {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: .8rem;
+    color: #509e72;
+    font-family: 'Alatsi', sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    z-index: -6;
+}
+
+
+/* @@@@ Tabs Content */
+
+
+/* Total content */
+
+#profile .content {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+#profile .main_inf_container {
+    display: inline-block;
+}
+
+#profile .real_val_container {
+    display: inline-block;
+}
+
+#profile .tabcontent {
+    color: black;
+    display: none;
+    padding: 10px 20px;
+    height: 100%;
+    margin: auto;
+}
+
+
+/* main Information Of All Tabs */
+
+#profile .main_information {
+    padding: 0rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#profile .main_information li {
+    margin: 1.1rem auto;
+    list-style: none;
+    font-family: 'Righteous', cursive;
+    font-size: 1rem;
+    color: #1d7945;
+    text-align: left;
+}
+
+
+/* real Values Of All Tabs */
+
+#profile .real_values {
+    padding: 0rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#profile .real_values li {
+    margin: 1.1rem auto;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+
+/* Links in tabs */
+
+#profile .change-pass {
+    color: #509e72;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/* ---- End Profile Page ---- */
+
+
+/* ___________________END___________________ */

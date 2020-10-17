@@ -1,0 +1,19 @@
+.container {
+    margin: auto;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Reem Kufi';
+}
+
+h4 {
+    color: rgb(122, 239, 200);
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(233, 236, 239, .08);
+    border-radius: 30px;
+}

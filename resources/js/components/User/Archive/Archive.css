@@ -1,0 +1,105 @@
+/* Archive Container */
+
+.archive_container {
+    width: 100%;
+    height: auto;
+    border: 0px solid rgba(255, 255, 255, .3);
+    border-radius: 30px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+/* Archive Table */
+
+.archive_table {
+    font-family: 'Tajawal', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+
+/* Table Border Shape */
+
+.archive_table td,
+.archive_table th {
+    border-radius: 30px;
+    padding: .3rem;
+    margin: auto;
+}
+
+
+/* Change Colors Of Odd Rows */
+
+.archive_table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(245, 245, 245);
+    font-weight: 600;
+}
+
+
+/* Change Colors Of even Rows */
+
+.archive_table tr:nth-child(even) {
+    background-color: #b3b3b3;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+}
+
+
+/* First Row Of Table (Title) */
+
+.archive_table th {
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    text-align: center;
+    background-color: #50966f;
+    margin: auto;
+}
+
+
+/* Data Of Archived Files */
+
+.archive_table td {
+    font-size: 1rem;
+    margin: auto;
+}
+
+
+/* Responsive Table */
+
+@media screen and (max-width: 600px) {
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}

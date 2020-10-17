@@ -1,0 +1,64 @@
+/* Tutorial Container */
+
+
+/* Tutorial Title */
+
+.inner h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin: 0rem auto;
+    color: whitesmoke;
+}
+
+
+/* Line After main Title */
+
+.line_tutorial_title {
+    border: 0;
+    width: 60vw;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #5c5c6d, #fff, #626374);
+    margin: 20px auto;
+}
+
+
+/* List Of Steps */
+
+.inner ul {
+    width: 50%;
+    margin: 1.3rem auto;
+    padding: 1rem;
+}
+
+.inner li {
+    font-size: 1.1rem;
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+    margin: 10px auto;
+}
+
+
+/* video Title */
+
+.video_title {
+    font-size: 1.8rem;
+}
+
+
+/* Line After Video Title */
+
+.line_video_title {
+    width: 40vw;
+}
+
+
+/* Scanning Video Limitations */
+
+.scanning_video {
+    width: 25rem;
+    height: 20rem;
+    max-width: 100%;
+    margin: 1.3rem auto;
+    padding: 1rem;}

@@ -1,0 +1,29 @@
+.card-title {
+    margin-top: 15px;
+    font-family: 'Reem Kufi';
+    color: #ffffff;
+}
+
+div.card {
+    background-color: rgb(255, 255, 255, .08);
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-magic:before,
+.fa-file-signature:before,
+.fa-sync:before,
+.fa-camera-retro:before,
+.fa-blog:before,
+.fa-shield-alt:before {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+.card-text {
+    padding: 0px 50px;
+    color: rgb(199, 199, 199) !important;
+}

@@ -1,0 +1,167 @@
+/* Android Texts At Left */
+
+.text_container_android {
+    background: rgba(255, 255, 255, .06);
+    border: 0px solid rgba(255, 255, 255, .06);
+    border-radius: 25px;
+    padding: 1rem;
+    display: inline-block;
+    height: auto;
+    width: 45%;
+    min-width: 262px;
+    margin: 0rem auto;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+/* Android Title */
+
+#android_title {
+    font-family: 'Alatsi', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: whitesmoke;
+    width: 90%;
+    margin: .6rem auto;
+    vertical-align: middle;
+    padding-top: 0;
+    text-align: center;
+}
+
+
+/* Android Paragraph */
+
+#android_paragraph {
+    margin: 0rem 0rem 0rem 0rem;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 auto;
+    color: #d0d0d0;
+}
+
+
+/* Try It Now Button */
+
+.text_container {
+    border-radius: 25px;
+    display: block;
+    height: auto;
+    min-width: 262px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+/* Get Started Button */
+
+.text_container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.text_container ul li {
+    --c: #f3f3f3;
+    color: var(--c);
+    font-size: 1rem;
+    border: 2px solid var(--c);
+    border-radius: 30px;
+    width: 12em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+/* Balls when hovering */
+
+.text_container ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+
+/* Balls Animation Timing */
+
+.text_container ul li:hover {
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.text_container ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.text_container ul li span:nth-child(1) {
+    --n: 1;
+}
+
+.text_container ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.text_container ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.text_container ul li span:nth-child(4) {
+    --n: 4;
+}
+
+@media screen and (max-width: 1125px) {
+    .getstarted {
+        padding: .6rem 3.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .getstarted {
+        padding: .6rem 2.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .getstarted {
+        padding: .6rem 1.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .getstarted {
+        padding: .6rem 0.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300) {
+    .getstarted {
+        padding: .6rem 0.375rem;
+        width: 100%;
+        text-align: center;
+    }
+}

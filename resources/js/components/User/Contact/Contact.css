@@ -1,0 +1,48 @@
+h2,
+.main_container h5 {
+    color: whitesmoke;
+    font-family: 'Reem Kufi';
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+}
+
+.main_container h3 {
+    color: rgb(122, 239, 200);
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(233, 236, 239, .08);
+    border-radius: 30px;
+}
+
+.inner label {
+    text-align: left;
+    color: whitesmoke;
+}
+
+.main_container p {
+    margin-bottom: 0;
+    padding: 0 50px;
+}
+
+i {
+    margin-top: 10px;
+}
+
+.inner .card {
+    background-color: rgb(233, 236, 239, .08);
+}
+
+textarea {
+    background-color: rgb(233, 236, 239, .2);
+}
+
+.form-control {
+    color: rgb(78, 78, 78) !important;
+    background-color: rgb(233, 236, 239, .2);
+}
